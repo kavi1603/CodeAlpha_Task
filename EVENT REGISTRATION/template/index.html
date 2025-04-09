@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Event Registration</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Event Registration</h1>
+        <form method="POST" action="/register">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <select name="event" required>
+                <option value="" disabled selected>Select Event</option>
+                <option value="Tech Talk">Tech Talk</option>
+                <option value="Coding Workshop">Coding Workshop</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
